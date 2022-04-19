@@ -20,7 +20,7 @@ spec:
       - name: aspnetcore
         image: "aliashraf786/testproject:latest"
         ports:
-          - containerPort: 3000
+          - containerPort: 3010
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   type: LoadBalancer
   ports:
   - name: http
-    targetPort: 3000
-    port: 80
+    targetPort: 3010
+    port: 805
